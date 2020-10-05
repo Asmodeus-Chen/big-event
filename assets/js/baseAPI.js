@@ -13,7 +13,7 @@ $.ajaxPrefilter(function (options) {
   }
   // 全局统一挂载complete回调函数
   options.complete = function (res) {
-    console.log(res);
+    // console.log(res);
     // 用res.responseJSON拿到服务器相应的数据
     if (res.responseJSON.status === 1 && res.
       responseJSON.message === "身份认证失败！") {
